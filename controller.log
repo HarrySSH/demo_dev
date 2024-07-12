@@ -1,0 +1,26 @@
+2024-07-11 21:22:50 | INFO | controller | args: Namespace(dispatch_method='shortest_queue', host='0.0.0.0', port=10000)
+2024-07-11 21:22:50 | INFO | controller | Init controller
+2024-07-11 21:22:50 | ERROR | stderr | [32mINFO[0m:     Started server process [[36m69657[0m]
+2024-07-11 21:22:50 | ERROR | stderr | [32mINFO[0m:     Waiting for application startup.
+2024-07-11 21:22:50 | ERROR | stderr | [32mINFO[0m:     Application startup complete.
+2024-07-11 21:22:50 | ERROR | stderr | [32mINFO[0m:     Uvicorn running on [1mhttp://0.0.0.0:10000[0m (Press CTRL+C to quit)
+2024-07-11 21:23:21 | INFO | stdout | [32mINFO[0m:     127.0.0.1:51516 - "[1mPOST /refresh_all_workers HTTP/1.1[0m" [32m200 OK[0m
+2024-07-11 21:23:21 | INFO | stdout | [32mINFO[0m:     127.0.0.1:51518 - "[1mPOST /list_models HTTP/1.1[0m" [32m200 OK[0m
+2024-07-11 21:23:40 | INFO | stdout | [32mINFO[0m:     127.0.0.1:51558 - "[1mPOST /refresh_all_workers HTTP/1.1[0m" [32m200 OK[0m
+2024-07-11 21:23:40 | INFO | stdout | [32mINFO[0m:     127.0.0.1:51560 - "[1mPOST /list_models HTTP/1.1[0m" [32m200 OK[0m
+2024-07-11 21:28:35 | INFO | stdout | [32mINFO[0m:     127.0.0.1:51903 - "[1mPOST /refresh_all_workers HTTP/1.1[0m" [32m200 OK[0m
+2024-07-11 21:28:36 | INFO | stdout | [32mINFO[0m:     127.0.0.1:51905 - "[1mPOST /list_models HTTP/1.1[0m" [32m200 OK[0m
+2024-07-11 21:28:44 | INFO | stdout | [32mINFO[0m:     127.0.0.1:51925 - "[1mPOST /refresh_all_workers HTTP/1.1[0m" [32m200 OK[0m
+2024-07-11 21:28:44 | INFO | stdout | [32mINFO[0m:     127.0.0.1:51927 - "[1mPOST /list_models HTTP/1.1[0m" [32m200 OK[0m
+2024-07-11 21:55:15 | INFO | stdout | [32mINFO[0m:     127.0.0.1:55101 - "[1mPOST /get_worker_address HTTP/1.1[0m" [32m200 OK[0m
+2024-07-11 21:55:24 | ERROR | stderr | [32mINFO[0m:     Shutting down
+2024-07-11 21:55:24 | ERROR | stderr | [32mINFO[0m:     Finished server process [[36m69657[0m]
+2024-07-11 21:55:24 | ERROR | stderr | [31mERROR[0m:    Traceback (most recent call last):
+2024-07-11 21:55:24 | ERROR | stderr |   File "/Users/ssun2/anaconda3/envs/deepheme/lib/python3.8/site-packages/starlette/routing.py", line 686, in lifespan
+2024-07-11 21:55:24 | ERROR | stderr |     await receive()
+2024-07-11 21:55:24 | ERROR | stderr |   File "/Users/ssun2/anaconda3/envs/deepheme/lib/python3.8/site-packages/uvicorn/lifespan/on.py", line 137, in receive
+2024-07-11 21:55:24 | ERROR | stderr |     return await self.receive_queue.get()
+2024-07-11 21:55:24 | ERROR | stderr |   File "/Users/ssun2/anaconda3/envs/deepheme/lib/python3.8/asyncio/queues.py", line 163, in get
+2024-07-11 21:55:24 | ERROR | stderr |     await getter
+2024-07-11 21:55:24 | ERROR | stderr | asyncio.exceptions.CancelledError
+2024-07-11 21:55:24 | ERROR | stderr | 
